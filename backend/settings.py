@@ -25,12 +25,12 @@ SECRET_KEY = "django-insecure-biti6gg&3v)i(@-lpvzig@_nva52dzo4@)-o(z=o7lc2vr8a*6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['slangswitch.herokuapp.com']
 
 CORS_ALLOW_ALL_ORIGINS = True
 # Application definition
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3000',"http://127.0.0.1:8000/slangtranslator/api/submit-string/","https://back-o7opxoflk-jcnunez30.vercel.app/"]
+CSRF_TRUSTED_ORIGINS = ['slangswitch.herokuapp.com','http://localhost:3000',"http://127.0.0.1:8000/slangtranslator/api/submit-string/"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -47,6 +47,7 @@ MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
