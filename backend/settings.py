@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['.vercel.app']
 CORS_ALLOW_ALL_ORIGINS = True
 # Application definition
 
-CSRF_TRUSTED_ORIGINS = ['http://localhost:3000',"http://127.0.0.1:8000/slangtranslator/api/submit-string/"]
+CSRF_TRUSTED_ORIGINS = ['http://localhost:3000',"http://127.0.0.1:8000/slangtranslator/api/submit-string/","https://back-o7opxoflk-jcnunez30.vercel.app/"]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
